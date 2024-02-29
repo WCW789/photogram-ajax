@@ -1,0 +1,3 @@
+var edited_comment = $("<%= escape_javascript(render 'comments/form', comment: @comment) %>");
+
+$("#<%= dom_id(@comment) %>").replaceWith(edited_comment);
